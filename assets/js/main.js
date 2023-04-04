@@ -1,10 +1,12 @@
 function mostrarOla(){
     let inputNome = document.getElementById('nome');
-    let msg = "Olá " + inputNome.value;
-
-    let outMostrar = document.getElementById('mostrar');
-    outMostrar.textContent = msg;
+    let outputMostrar = document.getElementById('mostrar');
+    outputMostrar.innerHTML = "Olá " + inputNome.value;
 }
+
+let botaoMostar = document.getElementById('botaoMostrar');
+botaoMostrar.addEventListener('click', mostrarOla);
+
 
 /*
 console.log("Olá Mundo!");
